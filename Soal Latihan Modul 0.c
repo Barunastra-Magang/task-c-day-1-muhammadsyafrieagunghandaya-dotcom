@@ -53,11 +53,13 @@ int main() {
     for(int i = 0; i < 5; i++) {
         printf("Nilai ke-%d : ", i+1);
         scanf("%d", &nilai[i]);
-        jumlah += nilai[i];
+        jumlah += nilai[i]; // Menambahkan setiap hasil iterasi di "jumlah"
     }
 
+    // Perhitungan
     printf("Jumlah = %d\n", jumlah);
     printf("Rata-rata = %.2f\n", (float)jumlah / 5);
 
     return 0;
 }
+
